@@ -29,4 +29,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/YOURGITHUBUSER/YOURPROJECT:latest
+          tags: ghcr.io/nutski/AuralArchive:latest
