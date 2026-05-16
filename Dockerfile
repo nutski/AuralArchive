@@ -3,8 +3,6 @@ FROM python:3.11-slim
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
-ENV PUID=99
-ENV PGID=100
 ENV UMASK=002
 ENV APP_PORT=8765
 
@@ -43,7 +41,7 @@ COPY . .
 RUN chmod +x /app/entrypoint.sh \
     && mkdir -p /config /data /downloads /books
 
-EXPOSE 5000
+EXPOSE 8765
 
 ENTRYPOINT ["/app/entrypoint.sh"]
 
